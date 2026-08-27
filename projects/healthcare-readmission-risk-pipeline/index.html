@@ -4,31 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Healthcare Readmission Risk Pipeline</title>
-  <style>
-    body { margin: 0; font-family: Inter, Arial, sans-serif; color: #17202a; background: #f8fafc; }
-    main { max-width: 900px; margin: 0 auto; padding: 48px 22px 72px; }
-    a { color: #0f766e; font-weight: 700; }
-    h1 { font-size: clamp(30px, 5vw, 52px); letter-spacing: 0; margin-bottom: 12px; }
-    p { font-size: 18px; line-height: 1.6; }
-    .panel { background: white; border: 1px solid #dbe4ea; border-radius: 8px; padding: 22px; margin-top: 24px; }
-    span { display: inline-block; margin: 6px 6px 0 0; padding: 6px 10px; border-radius: 999px; background: #e0f2f1; font-size: 14px; }
-    code { background: #eef2f7; padding: 2px 5px; border-radius: 4px; }
-  </style>
+  <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
-  <main>
-    <a href="../../">Back to portfolio</a>
-    <h1>Healthcare Readmission Risk Pipeline</h1>
-    <p>A synthetic healthcare risk scoring pipeline for feature engineering, interpretable scoring, and batch ML outputs.</p>
-    <section class="panel">
-      <h2>What this proves</h2>
-      <p>This project demonstrates production-minded data engineering using synthetic data, reproducible scripts, documented outputs, and a public-safe architecture pattern.</p>
-      <div><span>Python</span><span>Healthcare Analytics</span><span>Feature Engineering</span><span>ML Monitoring</span></div>
-    </section>
-    <section class="panel">
-      <h2>Repository path</h2>
-      <p><code>projects/healthcare-readmission-risk-pipeline</code></p>
-    </section>
+  <header class="page-header">
+    <div class="shell">
+      <a class="breadcrumb" href="../../">Back to portfolio</a>
+      <h1>Healthcare Readmission Risk Pipeline</h1>
+      <p class="hero-copy">A synthetic clinical analytics workflow for feature engineering, risk scoring, and batch model outputs.</p>
+    </div>
+  </header>
+  <main class="section">
+    <div class="shell case-grid">
+      <article class="case-body">
+        <h2>Business Problem</h2>
+        <p>Clinical teams need risk signals early enough to support discharge planning and follow-up workflows. This project recreates the data engineering side of a readmission model using fully synthetic data and transparent scoring logic.</p>
+        <h2>Architecture</h2>
+        <div class="flow">
+          <div class="flow-step">Synthetic patient records with clinical-style risk factors</div>
+          <div class="flow-step">Feature engineering for admissions, labs, medications, and social risk</div>
+          <div class="flow-step">Interpretable risk scoring and risk-band assignment</div>
+          <div class="flow-step">Daily scoring output for clinical workflow integration</div>
+        </div>
+        <h2>Implementation Details</h2>
+        <ul>
+          <li>Creates 120 synthetic patient records with no protected health information.</li>
+          <li>Scores risk using age, prior admissions, abnormal labs, medication count, and social risk flag.</li>
+          <li>Assigns low, medium, and high bands for operational triage.</li>
+          <li>Frames the work as data engineering and ML infrastructure, not medical decision automation.</li>
+        </ul>
+        <h2>LinkedIn Project Summary</h2>
+        <p>Developed a healthcare machine learning pipeline that engineered readmission risk features and generated daily patient-level risk scores for proactive discharge planning workflows.</p>
+      </article>
+      <aside class="sidebar">
+        <h2>Artifacts</h2>
+        <ul class="artifact-list">
+          <li><a href="README.md">Project README</a></li>
+          <li><a href="score_readmission_risk.py">Scoring script</a></li>
+          <li><a href="data/synthetic_patients.csv">Synthetic patient data</a></li>
+          <li><a href="outputs/daily_readmission_scores.csv">Risk score output</a></li>
+        </ul>
+        <h2>Skills</h2>
+        <div class="meta"><span class="chip">Python</span><span class="chip">Healthcare analytics</span><span class="chip">Feature engineering</span><span class="chip">ML operations</span></div>
+      </aside>
+    </div>
   </main>
 </body>
 </html>

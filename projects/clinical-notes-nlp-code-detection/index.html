@@ -4,31 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clinical Notes NLP Code Detection</title>
-  <style>
-    body { margin: 0; font-family: Inter, Arial, sans-serif; color: #17202a; background: #f8fafc; }
-    main { max-width: 900px; margin: 0 auto; padding: 48px 22px 72px; }
-    a { color: #0f766e; font-weight: 700; }
-    h1 { font-size: clamp(30px, 5vw, 52px); letter-spacing: 0; margin-bottom: 12px; }
-    p { font-size: 18px; line-height: 1.6; }
-    .panel { background: white; border: 1px solid #dbe4ea; border-radius: 8px; padding: 22px; margin-top: 24px; }
-    span { display: inline-block; margin: 6px 6px 0 0; padding: 6px 10px; border-radius: 999px; background: #e0f2f1; font-size: 14px; }
-    code { background: #eef2f7; padding: 2px 5px; border-radius: 4px; }
-  </style>
+  <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
-  <main>
-    <a href="../../">Back to portfolio</a>
-    <h1>Clinical Notes NLP Code Detection</h1>
-    <p>A synthetic NLP workflow that scans fake clinical notes and flags candidate billing-code review items.</p>
-    <section class="panel">
-      <h2>What this proves</h2>
-      <p>This project demonstrates production-minded data engineering using synthetic data, reproducible scripts, documented outputs, and a public-safe architecture pattern.</p>
-      <div><span>Python</span><span>NLP</span><span>Healthcare Compliance</span><span>Model Evaluation</span></div>
-    </section>
-    <section class="panel">
-      <h2>Repository path</h2>
-      <p><code>projects/clinical-notes-nlp-code-detection</code></p>
-    </section>
+  <header class="page-header">
+    <div class="shell">
+      <a class="breadcrumb" href="../../">Back to portfolio</a>
+      <h1>Clinical Notes NLP Code Detection</h1>
+      <p class="hero-copy">A synthetic clinical NLP pipeline that creates review-ready candidate coding findings without using patient data.</p>
+    </div>
+  </header>
+  <main class="section">
+    <div class="shell case-grid">
+      <article class="case-body">
+        <h2>Business Problem</h2>
+        <p>Revenue cycle teams often need a targeted review workflow rather than broad manual review. This project demonstrates how text detection can identify candidate diagnosis codes from clinical-style notes and route uncertain findings for human review.</p>
+        <h2>Architecture</h2>
+        <div class="flow">
+          <div class="flow-step">Synthetic clinical notes and billed-code records</div>
+          <div class="flow-step">Terminology detection for diagnosis candidates</div>
+          <div class="flow-step">Comparison against billed-code fields</div>
+          <div class="flow-step">Human-review queue for missing candidate codes</div>
+        </div>
+        <h2>Implementation Details</h2>
+        <ul>
+          <li>Uses 60 fake clinical notes, each generated without patient information.</li>
+          <li>Detects diagnosis terms and maps them to synthetic ICD-style candidate codes.</li>
+          <li>Flags only missing candidates, preserving a human review checkpoint.</li>
+          <li>Demonstrates compliance-aware NLP workflow design rather than automated billing decisions.</li>
+        </ul>
+        <h2>LinkedIn Project Summary</h2>
+        <p>Built a synthetic NLP pipeline to process clinical-style notes and identify candidate diagnosis codes missing from billed-code records, with outputs designed for targeted human review.</p>
+      </article>
+      <aside class="sidebar">
+        <h2>Artifacts</h2>
+        <ul class="artifact-list">
+          <li><a href="README.md">Project README</a></li>
+          <li><a href="detect_candidate_codes.py">NLP detection script</a></li>
+          <li><a href="data/synthetic_clinical_notes.csv">Synthetic notes</a></li>
+          <li><a href="outputs/candidate_code_findings.csv">Review findings</a></li>
+        </ul>
+        <h2>Skills</h2>
+        <div class="meta"><span class="chip">Python</span><span class="chip">NLP</span><span class="chip">Healthcare compliance</span><span class="chip">Human review workflow</span></div>
+      </aside>
+    </div>
   </main>
 </body>
 </html>

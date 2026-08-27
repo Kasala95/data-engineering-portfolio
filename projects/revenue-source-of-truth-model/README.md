@@ -13,3 +13,21 @@ Created a unified revenue model to align Finance, Marketing, and executive repor
 
 ## Run
 `python3 reconcile_revenue.py` produces recognized revenue and a reconciliation report.
+
+## Case Study Detail
+
+This project demonstrates how revenue analytics needs engineering controls, not just aggregation. A trusted revenue model has to define which deals count, how currencies are converted, how duplicates are handled, and how discrepancies are surfaced before reporting.
+
+The synthetic pipeline filters closed-won deals, applies standardized exchange rates, writes recognized revenue output, and generates a reconciliation report. In a real environment, this same pattern supports Finance, Marketing, Sales Operations, and executive reporting.
+
+Production equivalent patterns:
+
+- Snowflake models for bookings, pipeline, recognized revenue, and attribution
+- controlled FX rate reference tables
+- reconciliation thresholds before dashboard publication
+- ownership and sign-off workflows for metric definition changes
+- audit-friendly output for quarterly reporting cycles
+
+Reviewer signal:
+
+This project shows I can work where data engineering meets financial trust, stakeholder alignment, and business-critical reporting.

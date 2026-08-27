@@ -4,31 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Data Quality And Observability Framework</title>
-  <style>
-    body { margin: 0; font-family: Inter, Arial, sans-serif; color: #17202a; background: #f8fafc; }
-    main { max-width: 900px; margin: 0 auto; padding: 48px 22px 72px; }
-    a { color: #0f766e; font-weight: 700; }
-    h1 { font-size: clamp(30px, 5vw, 52px); letter-spacing: 0; margin-bottom: 12px; }
-    p { font-size: 18px; line-height: 1.6; }
-    .panel { background: white; border: 1px solid #dbe4ea; border-radius: 8px; padding: 22px; margin-top: 24px; }
-    span { display: inline-block; margin: 6px 6px 0 0; padding: 6px 10px; border-radius: 999px; background: #e0f2f1; font-size: 14px; }
-    code { background: #eef2f7; padding: 2px 5px; border-radius: 4px; }
-  </style>
+  <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
-  <main>
-    <a href="../../">Back to portfolio</a>
-    <h1>Data Quality And Observability Framework</h1>
-    <p>A lightweight observability framework that surfaces duplicate records, nulls, range issues, and freshness status before data reaches reporting.</p>
-    <section class="panel">
-      <h2>What this proves</h2>
-      <p>This project demonstrates production-minded data engineering using synthetic data, reproducible scripts, documented outputs, and a public-safe architecture pattern.</p>
-      <div><span>Great Expectations</span><span>dbt Tests</span><span>Data Quality</span><span>Data Observability</span></div>
-    </section>
-    <section class="panel">
-      <h2>Repository path</h2>
-      <p><code>projects/data-quality-observability-framework</code></p>
-    </section>
+  <header class="page-header">
+    <div class="shell">
+      <a class="breadcrumb" href="../../">Back to portfolio</a>
+      <h1>Data Quality And Observability Framework</h1>
+      <p class="hero-copy">A validation and observability pattern for catching data issues before they reach dashboards or downstream users.</p>
+    </div>
+  </header>
+  <main class="section">
+    <div class="shell case-grid">
+      <article class="case-body">
+        <h2>Business Problem</h2>
+        <p>Data teams lose credibility when broken records, stale loads, or unexpected schema behavior silently move into dashboards. This project demonstrates a compact observability workflow that turns quality expectations into repeatable checks and machine-readable reports.</p>
+        <h2>Architecture</h2>
+        <div class="flow">
+          <div class="flow-step">Synthetic event data with deliberate quality issues</div>
+          <div class="flow-step">Validation checks for uniqueness, nulls, ranges, and freshness</div>
+          <div class="flow-step">Quality report with pass/fail status and failure counts</div>
+          <div class="flow-step">Runbook-ready output for incident triage</div>
+        </div>
+        <h2>Implementation Details</h2>
+        <ul>
+          <li>Intentionally includes one duplicate record and one missing account ID to prove the checks work.</li>
+          <li>Produces a JSON quality report that can feed alerts, dashboards, or deployment gates.</li>
+          <li>Separates expected failures from pipeline crashes, which mirrors production observability design.</li>
+          <li>Uses only standard-library Python so reviewers can run the project immediately.</li>
+        </ul>
+        <h2>LinkedIn Project Summary</h2>
+        <p>Built automated quality checks for analytics pipelines focused on freshness, schema stability, duplicate detection, null thresholds, relationship checks, and metric drift before dashboard publication.</p>
+      </article>
+      <aside class="sidebar">
+        <h2>Artifacts</h2>
+        <ul class="artifact-list">
+          <li><a href="README.md">Project README</a></li>
+          <li><a href="validate_events.py">Validation script</a></li>
+          <li><a href="data/events.csv">Synthetic events</a></li>
+          <li><a href="outputs/quality_report.json">Quality report</a></li>
+        </ul>
+        <h2>Skills</h2>
+        <div class="meta"><span class="chip">Data quality</span><span class="chip">Observability</span><span class="chip">Great Expectations</span><span class="chip">dbt tests</span></div>
+      </aside>
+    </div>
   </main>
 </body>
 </html>

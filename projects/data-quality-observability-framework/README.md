@@ -13,3 +13,21 @@ Built automated data quality and observability checks to catch silent pipeline i
 
 ## Run
 `python3 validate_events.py` runs checks and writes a quality report.
+
+## Case Study Detail
+
+This project demonstrates a practical quality gate for analytics data. The input intentionally contains a duplicate record and a missing business key so the validation report has meaningful failures. In real data systems, those issues should be detected before dashboards, ML jobs, or executive metrics consume the dataset.
+
+The validation script produces structured JSON that can be connected to alerts, deployment gates, or incident triage workflows. The point is not that every check passes; the point is that the system identifies failures clearly.
+
+Production equivalent patterns:
+
+- Great Expectations or dbt tests for table-level and column-level checks
+- freshness monitoring for ingestion pipelines
+- uniqueness and not-null controls on business keys
+- alert routing to Slack, PagerDuty, Datadog, or CloudWatch
+- runbooks that distinguish source-data issues from transformation failures
+
+Reviewer signal:
+
+This project shows I treat trust, monitoring, and failure visibility as part of the product, not an afterthought.

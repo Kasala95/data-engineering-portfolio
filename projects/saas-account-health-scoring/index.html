@@ -4,31 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SaaS Account Health Scoring</title>
-  <style>
-    body { margin: 0; font-family: Inter, Arial, sans-serif; color: #17202a; background: #f8fafc; }
-    main { max-width: 900px; margin: 0 auto; padding: 48px 22px 72px; }
-    a { color: #0f766e; font-weight: 700; }
-    h1 { font-size: clamp(30px, 5vw, 52px); letter-spacing: 0; margin-bottom: 12px; }
-    p { font-size: 18px; line-height: 1.6; }
-    .panel { background: white; border: 1px solid #dbe4ea; border-radius: 8px; padding: 22px; margin-top: 24px; }
-    span { display: inline-block; margin: 6px 6px 0 0; padding: 6px 10px; border-radius: 999px; background: #e0f2f1; font-size: 14px; }
-    code { background: #eef2f7; padding: 2px 5px; border-radius: 4px; }
-  </style>
+  <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
-  <main>
-    <a href="../../">Back to portfolio</a>
-    <h1>SaaS Account Health Scoring</h1>
-    <p>A customer success scoring pipeline that turns product usage, support, satisfaction, renewal timing, and account value into operational health segments.</p>
-    <section class="panel">
-      <h2>What this proves</h2>
-      <p>This project demonstrates production-minded data engineering using synthetic data, reproducible scripts, documented outputs, and a public-safe architecture pattern.</p>
-      <div><span>PySpark</span><span>Feature Engineering</span><span>Customer Analytics</span><span>Operational Analytics</span></div>
-    </section>
-    <section class="panel">
-      <h2>Repository path</h2>
-      <p><code>projects/saas-account-health-scoring</code></p>
-    </section>
+  <header class="page-header">
+    <div class="shell">
+      <a class="breadcrumb" href="../../">Back to portfolio</a>
+      <h1>SaaS Account Health Scoring</h1>
+      <p class="hero-copy">A daily account scoring pattern for customer retention, renewal risk, and expansion prioritization.</p>
+    </div>
+  </header>
+  <main class="section">
+    <div class="shell case-grid">
+      <article class="case-body">
+        <h2>Business Problem</h2>
+        <p>Customer success and revenue teams need account signals inside their operating rhythm, not just after-the-fact dashboard views. This project shows how product usage, support burden, satisfaction, renewal timing, and annual revenue can be combined into a practical health score.</p>
+        <h2>Architecture</h2>
+        <div class="flow">
+          <div class="flow-step">Account signal ingestion: usage, tickets, CSAT, ARR, renewal date</div>
+          <div class="flow-step">Feature normalization and weighted scoring</div>
+          <div class="flow-step">Health band assignment: at risk, watch, healthy</div>
+          <div class="flow-step">CRM-ready output for customer-facing prioritization</div>
+        </div>
+        <h2>Implementation Details</h2>
+        <ul>
+          <li>Scores 80 synthetic accounts using a transparent formula designed for operational explainability.</li>
+          <li>Rewards active usage and satisfaction while penalizing high support burden.</li>
+          <li>Includes renewal timing as a prioritization factor rather than a standalone churn prediction.</li>
+          <li>Produces a CSV output that can be plugged into a CRM enrichment or dashboard workflow.</li>
+        </ul>
+        <h2>LinkedIn Project Summary</h2>
+        <p>Built a daily account health scoring pipeline that unified customer activity, support interactions, renewal timing, and account value into trusted account-level signals for retention and expansion workflows.</p>
+      </article>
+      <aside class="sidebar">
+        <h2>Artifacts</h2>
+        <ul class="artifact-list">
+          <li><a href="README.md">Project README</a></li>
+          <li><a href="score_accounts.py">Scoring script</a></li>
+          <li><a href="data/account_signals.csv">Synthetic account signals</a></li>
+          <li><a href="outputs/daily_account_health_scores.csv">Health score output</a></li>
+        </ul>
+        <h2>Skills</h2>
+        <div class="meta"><span class="chip">Python</span><span class="chip">Feature engineering</span><span class="chip">Customer analytics</span><span class="chip">Batch scoring</span></div>
+      </aside>
+    </div>
   </main>
 </body>
 </html>

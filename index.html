@@ -3,35 +3,132 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ocholi Idakwo - Data Engineering Portfolio</title>
-  <style>
-    body { margin: 0; font-family: Inter, Arial, sans-serif; color: #17202a; background: #f8fafc; }
-    header { padding: 56px 8vw 36px; background: #0f766e; color: white; }
-    h1 { margin: 0 0 12px; font-size: clamp(32px, 6vw, 58px); letter-spacing: 0; }
-    .subtitle { max-width: 900px; font-size: 20px; line-height: 1.5; }
-    main { padding: 36px 8vw 64px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
-    .card { background: white; border: 1px solid #dbe4ea; border-radius: 8px; padding: 22px; box-shadow: 0 1px 3px rgba(15, 23, 42, .08); }
-    h2 { margin-top: 0; font-size: 21px; }
-    a { color: #0f766e; font-weight: 700; text-decoration: none; }
-    p { line-height: 1.55; }
-    .tag { display: inline-block; margin: 4px 6px 0 0; padding: 4px 8px; border-radius: 999px; background: #e0f2f1; font-size: 13px; }
-  </style>
+  <title>Ocholi Idakwo | Senior Data Engineering Portfolio</title>
+  <meta name="description" content="Senior Data Engineer portfolio covering cloud data platforms, analytics engineering, governance, revenue data, observability, and healthcare ML.">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <header>
-    <h1>Ocholi Idakwo</h1>
-    <div class="subtitle">Senior Data Engineer portfolio focused on cloud data platforms, governed analytics, revenue data, customer intelligence, and healthcare machine learning.</div>
-  </header>
-  <main>
-    <div class="grid">
-      <section class="card"><h2>Customer 360 Analytics Platform</h2><p>CRM data modeling with customer marts, SQL patterns, metadata, and quality checks.</p><a href="projects/customer-360-analytics-platform/">View project</a></section>
-      <section class="card"><h2>SaaS Account Health Scoring</h2><p>Feature engineering and operational account scoring for retention and expansion workflows.</p><a href="projects/saas-account-health-scoring/">View project</a></section>
-      <section class="card"><h2>Revenue Source Of Truth</h2><p>Finance data controls, FX standardization, deal filtering, and reconciliation reporting.</p><a href="projects/revenue-source-of-truth-model/">View project</a></section>
-      <section class="card"><h2>Data Quality Observability</h2><p>Automated uniqueness, null, range, and freshness checks with JSON reporting.</p><a href="projects/data-quality-observability-framework/">View project</a></section>
-      <section class="card"><h2>Healthcare Readmission Risk</h2><p>Synthetic healthcare feature engineering and interpretable risk scoring for batch ML workflows.</p><a href="projects/healthcare-readmission-risk-pipeline/">View project</a></section>
-      <section class="card"><h2>Clinical Notes NLP</h2><p>Synthetic clinical note scanning for candidate billing-code review workflows.</p><a href="projects/clinical-notes-nlp-code-detection/">View project</a></section>
+  <header class="hero">
+    <div class="shell">
+      <nav class="nav" aria-label="Main navigation">
+        <div class="brand">Ocholi Idakwo</div>
+        <div class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#proof">Positioning</a>
+          <a href="linkedin-project-copy.md">LinkedIn copy</a>
+          <a href="https://github.com/Kasala95/data-engineering-portfolio">GitHub</a>
+        </div>
+      </nav>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Senior Data Engineer Portfolio</div>
+          <h1>Cloud data systems built for trust, scale, and decisions.</h1>
+          <p class="hero-copy">A public portfolio of synthetic, employer-safe projects modeled after real senior data engineering work: Customer 360 analytics, account health scoring, revenue reconciliation, data quality, healthcare ML, and clinical NLP.</p>
+          <div class="actions">
+            <a class="button primary" href="#projects">Review projects</a>
+            <a class="button secondary" href="https://github.com/Kasala95/data-engineering-portfolio">Open repository</a>
+          </div>
+        </div>
+        <div class="system-map" aria-label="Portfolio architecture diagram">
+          <div class="map-row">
+            <div class="node">CRM and Product Events</div>
+            <div class="node">Finance and FX Data</div>
+            <div class="node">Healthcare Signals</div>
+          </div>
+          <div class="map-row">
+            <div class="node">Python Pipelines</div>
+            <div class="node">SQL Models</div>
+            <div class="node">Quality Controls</div>
+          </div>
+          <div class="map-row">
+            <div class="node wide">Decision-Ready Marts, Scores, Reports, and Review Queues</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="shell">
+        <div class="metrics">
+          <div class="metric"><strong>6</strong><span>End-to-end project case studies</span></div>
+          <div class="metric"><strong>100%</strong><span>Synthetic, public-safe datasets</span></div>
+          <div class="metric"><strong>0</strong><span>External packages required to run core scripts</span></div>
+          <div class="metric"><strong>41</strong><span>Committed project files across data, code, docs, and outputs</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="shell">
+        <div class="section-title">
+          <h2>Portfolio Projects</h2>
+          <p>Each project is written as a recruiter-readable case study and backed by runnable code, synthetic source data, and generated outputs.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Customer 360 Analytics Platform</h3>
+            <p>Modular customer modeling across companies, contacts, deals, and support tickets, built to demonstrate analytics engineering patterns for self-service reporting.</p>
+            <div class="meta"><span class="chip">SQL</span><span class="chip">dbt-style modeling</span><span class="chip">Customer analytics</span><span class="chip">Data quality</span></div>
+            <div class="project-links"><a href="projects/customer-360-analytics-platform/">Case study</a><a href="projects/customer-360-analytics-platform/outputs/customer_360_mart.csv">Output CSV</a></div>
+          </article>
+
+          <article class="project-card">
+            <h3>SaaS Account Health Scoring</h3>
+            <p>Operational scoring pipeline that turns usage, support activity, CSAT, renewal timing, and account value into health segments for customer teams.</p>
+            <div class="meta"><span class="chip">Python</span><span class="chip">Feature engineering</span><span class="chip">Customer success</span><span class="chip">Batch scoring</span></div>
+            <div class="project-links"><a href="projects/saas-account-health-scoring/">Case study</a><a href="projects/saas-account-health-scoring/outputs/daily_account_health_scores.csv">Output CSV</a></div>
+          </article>
+
+          <article class="project-card">
+            <h3>Revenue Source Of Truth</h3>
+            <p>Finance-ready revenue model that standardizes closed-won filtering, FX conversion, deduplication, and reconciliation reporting.</p>
+            <div class="meta"><span class="chip">Revenue data</span><span class="chip">Controls</span><span class="chip">Reconciliation</span><span class="chip">Warehouse logic</span></div>
+            <div class="project-links"><a href="projects/revenue-source-of-truth-model/">Case study</a><a href="projects/revenue-source-of-truth-model/outputs/reconciliation_report.json">Report JSON</a></div>
+          </article>
+
+          <article class="project-card">
+            <h3>Data Quality And Observability</h3>
+            <p>Validation framework that catches duplicate IDs, null business keys, invalid ranges, and freshness problems before data reaches stakeholders.</p>
+            <div class="meta"><span class="chip">Data quality</span><span class="chip">Observability</span><span class="chip">Runbooks</span><span class="chip">JSON reports</span></div>
+            <div class="project-links"><a href="projects/data-quality-observability-framework/">Case study</a><a href="projects/data-quality-observability-framework/outputs/quality_report.json">Quality report</a></div>
+          </article>
+
+          <article class="project-card">
+            <h3>Healthcare Readmission Risk Pipeline</h3>
+            <p>Synthetic healthcare scoring workflow that engineers clinical-style features and produces interpretable readmission risk bands.</p>
+            <div class="meta"><span class="chip">Healthcare analytics</span><span class="chip">ML features</span><span class="chip">Risk scoring</span><span class="chip">HIPAA-aware portfolio</span></div>
+            <div class="project-links"><a href="projects/healthcare-readmission-risk-pipeline/">Case study</a><a href="projects/healthcare-readmission-risk-pipeline/outputs/daily_readmission_scores.csv">Output CSV</a></div>
+          </article>
+
+          <article class="project-card">
+            <h3>Clinical Notes NLP Code Detection</h3>
+            <p>Synthetic NLP workflow that scans fake clinical notes and creates a human-review queue for candidate missing diagnosis codes.</p>
+            <div class="meta"><span class="chip">NLP</span><span class="chip">Python</span><span class="chip">Human review</span><span class="chip">Compliance workflow</span></div>
+            <div class="project-links"><a href="projects/clinical-notes-nlp-code-detection/">Case study</a><a href="projects/clinical-notes-nlp-code-detection/outputs/candidate_code_findings.csv">Output CSV</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-band" id="proof">
+      <div class="shell proof-grid">
+        <div>
+          <div class="eyebrow">Professional Positioning</div>
+          <h2>Built to support senior data engineering conversations.</h2>
+          <p>This portfolio is designed to complement LinkedIn and resume positioning for roles in cloud data engineering, analytics engineering, revenue data, governed warehousing, and healthcare analytics.</p>
+        </div>
+        <div class="proof-panel">
+          <h3>Core Stack Signals</h3>
+          <p>Snowflake, Databricks, Spark, PySpark, dbt, Kafka, Azure Data Factory, AWS Glue, Redshift, BigQuery, Great Expectations, MLflow, Terraform, IAM, SOC 2, HIPAA, observability, and metric governance.</p>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="shell">All data and examples are synthetic and public-safe. No employer systems, customer records, patient data, credentials, or confidential architecture are included.</div>
+  </footer>
 </body>
 </html>

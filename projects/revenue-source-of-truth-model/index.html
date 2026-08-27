@@ -4,31 +4,50 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Revenue Source Of Truth Model</title>
-  <style>
-    body { margin: 0; font-family: Inter, Arial, sans-serif; color: #17202a; background: #f8fafc; }
-    main { max-width: 900px; margin: 0 auto; padding: 48px 22px 72px; }
-    a { color: #0f766e; font-weight: 700; }
-    h1 { font-size: clamp(30px, 5vw, 52px); letter-spacing: 0; margin-bottom: 12px; }
-    p { font-size: 18px; line-height: 1.6; }
-    .panel { background: white; border: 1px solid #dbe4ea; border-radius: 8px; padding: 22px; margin-top: 24px; }
-    span { display: inline-block; margin: 6px 6px 0 0; padding: 6px 10px; border-radius: 999px; background: #e0f2f1; font-size: 14px; }
-    code { background: #eef2f7; padding: 2px 5px; border-radius: 4px; }
-  </style>
+  <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
-  <main>
-    <a href="../../">Back to portfolio</a>
-    <h1>Revenue Source Of Truth Model</h1>
-    <p>A finance analytics project that standardizes revenue recognition logic, FX conversion, and reconciliation controls.</p>
-    <section class="panel">
-      <h2>What this proves</h2>
-      <p>This project demonstrates production-minded data engineering using synthetic data, reproducible scripts, documented outputs, and a public-safe architecture pattern.</p>
-      <div><span>Snowflake</span><span>SQL</span><span>Revenue Analytics</span><span>Data Reconciliation</span></div>
-    </section>
-    <section class="panel">
-      <h2>Repository path</h2>
-      <p><code>projects/revenue-source-of-truth-model</code></p>
-    </section>
+  <header class="page-header">
+    <div class="shell">
+      <a class="breadcrumb" href="../../">Back to portfolio</a>
+      <h1>Revenue Source Of Truth Model</h1>
+      <p class="hero-copy">A finance-grade modeling pattern for consistent revenue logic, currency conversion, and reconciliation checks.</p>
+    </div>
+  </header>
+  <main class="section">
+    <div class="shell case-grid">
+      <article class="case-body">
+        <h2>Business Problem</h2>
+        <p>Revenue reporting becomes fragile when Finance, Marketing, and executive dashboards apply different close-date rules, currency timing, duplicate handling, or attribution logic. This project demonstrates a controlled revenue model designed around consistency and auditability.</p>
+        <h2>Architecture</h2>
+        <div class="flow">
+          <div class="flow-step">Deal records and exchange-rate reference data</div>
+          <div class="flow-step">Closed-won filtering and deal-level deduplication</div>
+          <div class="flow-step">Standardized FX conversion into USD</div>
+          <div class="flow-step">Recognized revenue output and reconciliation report</div>
+        </div>
+        <h2>Implementation Details</h2>
+        <ul>
+          <li>Processes 100 synthetic deal records across USD, EUR, and GBP.</li>
+          <li>Recognizes 56 closed-won deals with standardized FX conversion.</li>
+          <li>Produces a reconciliation report with recognized revenue of $3,616,925.85.</li>
+          <li>Documents controls that map to real finance analytics review patterns.</li>
+        </ul>
+        <h2>LinkedIn Project Summary</h2>
+        <p>Created a unified revenue model to align Finance, Marketing, and executive reporting around consistent close-date logic, deduplication, foreign exchange conversion, and automated reconciliation controls.</p>
+      </article>
+      <aside class="sidebar">
+        <h2>Artifacts</h2>
+        <ul class="artifact-list">
+          <li><a href="README.md">Project README</a></li>
+          <li><a href="reconcile_revenue.py">Reconciliation script</a></li>
+          <li><a href="outputs/recognized_revenue.csv">Recognized revenue CSV</a></li>
+          <li><a href="outputs/reconciliation_report.json">Reconciliation report</a></li>
+        </ul>
+        <h2>Skills</h2>
+        <div class="meta"><span class="chip">Revenue analytics</span><span class="chip">SQL</span><span class="chip">Controls</span><span class="chip">Data governance</span></div>
+      </aside>
+    </div>
   </main>
 </body>
 </html>

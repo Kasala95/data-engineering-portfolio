@@ -4,31 +4,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Customer 360 Analytics Platform</title>
-  <style>
-    body { margin: 0; font-family: Inter, Arial, sans-serif; color: #17202a; background: #f8fafc; }
-    main { max-width: 900px; margin: 0 auto; padding: 48px 22px 72px; }
-    a { color: #0f766e; font-weight: 700; }
-    h1 { font-size: clamp(30px, 5vw, 52px); letter-spacing: 0; margin-bottom: 12px; }
-    p { font-size: 18px; line-height: 1.6; }
-    .panel { background: white; border: 1px solid #dbe4ea; border-radius: 8px; padding: 22px; margin-top: 24px; }
-    span { display: inline-block; margin: 6px 6px 0 0; padding: 6px 10px; border-radius: 999px; background: #e0f2f1; font-size: 14px; }
-    code { background: #eef2f7; padding: 2px 5px; border-radius: 4px; }
-  </style>
+  <link rel="stylesheet" href="../../assets/site.css">
 </head>
 <body>
-  <main>
-    <a href="../../">Back to portfolio</a>
-    <h1>Customer 360 Analytics Platform</h1>
-    <p>A modular CRM analytics warehouse with synthetic companies, contacts, deals, and support tickets.</p>
-    <section class="panel">
-      <h2>What this proves</h2>
-      <p>This project demonstrates production-minded data engineering using synthetic data, reproducible scripts, documented outputs, and a public-safe architecture pattern.</p>
-      <div><span>Snowflake</span><span>dbt</span><span>SQL</span><span>Data Modeling</span><span>Analytics Engineering</span></div>
-    </section>
-    <section class="panel">
-      <h2>Repository path</h2>
-      <p><code>projects/customer-360-analytics-platform</code></p>
-    </section>
+  <header class="page-header">
+    <div class="shell">
+      <a class="breadcrumb" href="../../">Back to portfolio</a>
+      <h1>Customer 360 Analytics Platform</h1>
+      <p class="hero-copy">A modular analytics warehouse pattern for CRM entities, customer intelligence, and self-service reporting.</p>
+    </div>
+  </header>
+  <main class="section">
+    <div class="shell case-grid">
+      <article class="case-body">
+        <h2>Business Problem</h2>
+        <p>Customer reporting often breaks down when contacts, accounts, deals, and support records are modeled independently. Analysts rebuild similar joins, metric definitions drift, and dashboard consumers lose trust when the same customer has different answers in different places.</p>
+        <p>This project models a cleaner Customer 360 foundation using synthetic CRM data and a reusable mart that consolidates customer identity, revenue, contact coverage, and support workload.</p>
+        <h2>Architecture</h2>
+        <div class="flow">
+          <div class="flow-step">Raw CRM objects: companies, contacts, deals, tickets</div>
+          <div class="flow-step">Standardized entity joins and relationship checks</div>
+          <div class="flow-step">Customer-level mart with revenue, contacts, and support indicators</div>
+          <div class="flow-step">Dashboard-ready output for analysts and business teams</div>
+        </div>
+        <h2>Implementation Details</h2>
+        <ul>
+          <li>Generates synthetic CRM objects across 30 companies and related contacts, deals, and support tickets.</li>
+          <li>Creates a customer mart with contact counts, open ticket counts, industry, and closed-won revenue.</li>
+          <li>Includes a SQL model showing the warehouse transformation pattern in a dbt-style layout.</li>
+          <li>Keeps all data public-safe while preserving the shape of real SaaS analytics work.</li>
+        </ul>
+        <h2>LinkedIn Project Summary</h2>
+        <p>Designed a modular Customer 360 analytics foundation covering contacts, companies, deals, support tickets, product usage, and lifecycle signals. The project demonstrates reusable modeling, business-readable definitions, and reliable self-service analytics patterns.</p>
+      </article>
+      <aside class="sidebar">
+        <h2>Artifacts</h2>
+        <ul class="artifact-list">
+          <li><a href="README.md">Project README</a></li>
+          <li><a href="run_pipeline.py">Pipeline script</a></li>
+          <li><a href="models/mart_customer_360.sql">SQL model</a></li>
+          <li><a href="outputs/customer_360_mart.csv">Customer mart output</a></li>
+        </ul>
+        <h2>Skills</h2>
+        <div class="meta"><span class="chip">SQL</span><span class="chip">Snowflake</span><span class="chip">dbt</span><span class="chip">Data modeling</span><span class="chip">Analytics engineering</span></div>
+      </aside>
+    </div>
   </main>
 </body>
 </html>
