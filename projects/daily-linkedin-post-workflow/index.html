@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily LinkedIn Post Workflow</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="shell">
+      <a class="breadcrumb" href="../../">Back to portfolio</a>
+      <h1>Daily LinkedIn Post Workflow</h1>
+      <p class="hero-copy">A scheduled content workflow that generates LinkedIn-ready daily technical posts with documentation diagrams.</p>
+    </div>
+  </header>
+  <main class="section">
+    <div class="shell case-grid">
+      <article class="case-body">
+        <h2>Business Problem</h2>
+        <p>Consistent technical visibility on LinkedIn is easier when the content process is repeatable. This project turns daily posting into a lightweight workflow with a topic calendar, templated post generation, diagram documentation, and a review checkpoint before publishing.</p>
+        <h2>Architecture</h2>
+        <div class="flow">
+          <div class="flow-step">Daily GitHub Actions cron trigger</div>
+          <div class="flow-step">Content calendar topic selection</div>
+          <div class="flow-step">LinkedIn-ready post and Mermaid diagram generation</div>
+          <div class="flow-step">Commit generated markdown for manual LinkedIn review</div>
+        </div>
+        <h2>Implementation Details</h2>
+        <ul>
+          <li>Runs daily from GitHub Actions using a cron schedule.</li>
+          <li>Generates posts about data engineering, analytics engineering, governance, observability, revenue data, and healthcare ML.</li>
+          <li>Creates a date-stamped markdown draft and updates a latest-post file.</li>
+          <li>Includes Mermaid diagrams so each post can become a documentation carousel or visual explainer.</li>
+          <li>Keeps publishing manual unless LinkedIn API authorization is added later.</li>
+        </ul>
+        <h2>LinkedIn Project Summary</h2>
+        <p>Built a scheduled workflow that generates daily LinkedIn-ready technical posts for a senior data engineering profile. The workflow uses GitHub Actions, a content calendar, repeatable post templates, Mermaid diagrams, and review-ready markdown outputs.</p>
+      </article>
+      <aside class="sidebar">
+        <h2>Artifacts</h2>
+        <ul class="artifact-list">
+          <li><a href="README.md">Project README</a></li>
+          <li><a href="generate_daily_post.py">Post generator</a></li>
+          <li><a href="content_calendar.json">Content calendar</a></li>
+          <li><a href="docs/workflow-diagram.md">Workflow diagram</a></li>
+          <li><a href="generated/latest-linkedin-post.md">Latest generated post</a></li>
+        </ul>
+        <h2>Skills</h2>
+        <div class="meta"><span class="chip">GitHub Actions</span><span class="chip">Automation</span><span class="chip">Technical writing</span><span class="chip">Mermaid diagrams</span></div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

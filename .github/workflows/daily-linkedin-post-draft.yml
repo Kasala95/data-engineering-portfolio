@@ -1,0 +1,33 @@
+name: Daily LinkedIn Post Draft
+
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Generate daily LinkedIn post draft
+        run: |
+          cd projects/daily-linkedin-post-workflow
+          python3 generate_daily_post.py
+
+      - name: Commit generated post
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add projects/daily-linkedin-post-workflow/generated/
+          if git diff --cached --quiet; then
+            echo "No post changes to commit."
+          else
+            git commit -m "Generate daily LinkedIn post draft"
+            git push
+          fi

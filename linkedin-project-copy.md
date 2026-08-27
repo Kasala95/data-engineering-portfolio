@@ -1,6 +1,6 @@
 # LinkedIn Project Copy
 
-Use these six as the first public projects on LinkedIn and GitHub.
+Use these seven as the first public projects on LinkedIn and GitHub.
 
 ## Customer 360 Analytics Platform
 
@@ -25,3 +25,7 @@ Developed a synthetic healthcare machine learning pipeline that engineers readmi
 ## Clinical Notes NLP Code Detection
 
 Built a synthetic NLP pipeline to process clinical-style notes and identify candidate diagnosis codes missing from billed-code records, with outputs designed for human review.
+
+## Daily LinkedIn Post Workflow
+
+Built a scheduled content workflow that generates daily LinkedIn-ready technical posts for a senior data engineering profile. The workflow uses GitHub Actions, a curated content calendar, repeatable post templates, Mermaid diagrams, and review-ready markdown outputs. It keeps publication manual unless a properly authorized LinkedIn API integration is added later.

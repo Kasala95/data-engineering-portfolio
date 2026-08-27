@@ -1,0 +1,58 @@
+[
+  {
+    "theme": "Customer 360",
+    "hook": "A Customer 360 model is not valuable because it has every field. It is valuable because teams trust the definitions.",
+    "body": "When I design customer analytics layers, I think in terms of reusable entities: company, contact, deal, ticket, product usage, and lifecycle status. The hard part is rarely the join itself. The hard part is agreeing on ownership, refresh cadence, field definitions, and validation rules so analysts are not rebuilding the same logic in every dashboard.",
+    "takeaway": "A good Customer 360 model should reduce repeated questions, not create a larger table with more confusion.",
+    "diagram_title": "Customer 360 Flow",
+    "diagram": "flowchart LR\\n  A[CRM Objects] --> B[Standardized Models]\\n  B --> C[Customer Mart]\\n  C --> D[Self-Service Analytics]"
+  },
+  {
+    "theme": "Revenue Data Trust",
+    "hook": "Revenue reporting needs controls before it needs another dashboard.",
+    "body": "The difference between two revenue numbers is often hidden in business logic: close-date rules, deal deduplication, currency conversion timing, account hierarchy, or attribution. A source-of-truth model should make those rules explicit and testable before the number reaches leadership.",
+    "takeaway": "Trusted revenue data is engineered through definitions, reconciliation, and ownership.",
+    "diagram_title": "Revenue Control Flow",
+    "diagram": "flowchart LR\\n  A[Deals] --> B[Business Rules]\\n  B --> C[FX Standardization]\\n  C --> D[Reconciliation Checks]\\n  D --> E[Executive Metrics]"
+  },
+  {
+    "theme": "Data Quality",
+    "hook": "Data quality checks are more useful when they explain what failed and who should care.",
+    "body": "A failed pipeline tells you something broke. A useful observability layer tells you whether the issue is freshness, duplicate records, missing business keys, invalid ranges, or metric drift. That context shortens incident response and helps business teams understand impact.",
+    "takeaway": "Good data quality work turns vague distrust into specific, fixable signals.",
+    "diagram_title": "Quality Gate",
+    "diagram": "flowchart LR\\n  A[Source Data] --> B[Validation Checks]\\n  B --> C{Pass?}\\n  C -->|Yes| D[Publish]\\n  C -->|No| E[Alert and Triage]"
+  },
+  {
+    "theme": "Account Health",
+    "hook": "A useful account health score should be explainable enough for customer teams to act on it.",
+    "body": "Account scoring works best when the ingredients are understandable: usage, support burden, customer satisfaction, renewal timing, and account value. If a team cannot explain why a score changed, the score becomes another dashboard number instead of an operational signal.",
+    "takeaway": "The best scoring systems support action, not just prediction.",
+    "diagram_title": "Health Scoring",
+    "diagram": "flowchart LR\\n  A[Usage] --> E[Health Score]\\n  B[Support] --> E\\n  C[CSAT] --> E\\n  D[Renewal Timing] --> E\\n  E --> F[CRM Workflow]"
+  },
+  {
+    "theme": "Healthcare ML",
+    "hook": "In healthcare analytics, the model is only one part of the system.",
+    "body": "A readmission risk workflow needs secure data handling, feature engineering, batch scoring, monitoring, clinical review, and responsible workflow integration. The engineering around the model often determines whether the output is trusted enough to use.",
+    "takeaway": "Healthcare ML succeeds when data engineering, privacy, monitoring, and human review are designed together.",
+    "diagram_title": "Healthcare Scoring Workflow",
+    "diagram": "flowchart LR\\n  A[Clinical Signals] --> B[Feature Pipeline]\\n  B --> C[Risk Score]\\n  C --> D[Monitoring]\\n  D --> E[Clinical Review]"
+  },
+  {
+    "theme": "Data Governance",
+    "hook": "Governance should make approved access easier and risky access harder.",
+    "body": "Good governance is not only about restricting data. It is about role clarity, automated access updates, column-level controls, auditability, and documentation that helps analysts know what they can use safely.",
+    "takeaway": "The best governance systems reduce friction and risk at the same time.",
+    "diagram_title": "Governed Access",
+    "diagram": "flowchart LR\\n  A[Identity Provider] --> B[Warehouse Roles]\\n  B --> C[Column Policies]\\n  C --> D[Approved Analytics]\\n  B --> E[Audit Logs]"
+  },
+  {
+    "theme": "Analytics Engineering",
+    "hook": "A semantic layer is a trust contract between data engineering and the business.",
+    "body": "When metrics live in scattered SQL, every dashboard becomes its own interpretation. A strong analytics engineering layer centralizes definitions, tests the assumptions, documents ownership, and gives teams reusable building blocks.",
+    "takeaway": "Reusable metric definitions are how data teams scale trust.",
+    "diagram_title": "Metric Layer",
+    "diagram": "flowchart LR\\n  A[Raw Tables] --> B[Staging Models]\\n  B --> C[Business Entities]\\n  C --> D[Metric Layer]\\n  D --> E[Dashboards and Decisions]"
+  }
+]

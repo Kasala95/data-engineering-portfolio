@@ -1,6 +1,6 @@
 # Ocholi Idakwo - Senior Data Engineering Portfolio
 
-This repository contains six public-safe, end-to-end data engineering portfolio projects built with synthetic data. The projects are designed to demonstrate senior-level thinking across analytics engineering, cloud data platforms, revenue data, data governance, observability, and healthcare machine learning workflows.
+This repository contains seven public-safe, end-to-end data engineering portfolio projects built with synthetic data and documentation-first automation. The projects are designed to demonstrate senior-level thinking across analytics engineering, cloud data platforms, revenue data, data governance, observability, healthcare machine learning workflows, and scheduled technical content operations.
 
 Live portfolio site: https://kasala95.github.io/data-engineering-portfolio/
 
@@ -15,6 +15,7 @@ Each project includes:
 - Generated output artifacts
 - Recruiter-readable case-study documentation
 - A public project page for LinkedIn Featured and Projects sections
+- Scheduled daily post draft generation for ongoing LinkedIn presence
 
 ## Portfolio Projects
 
@@ -26,6 +27,7 @@ Each project includes:
 | [Data Quality And Observability Framework](projects/data-quality-observability-framework) | Data quality checks, freshness, incident-ready reporting | Event data, validation script, JSON quality report |
 | [Healthcare Readmission Risk Pipeline](projects/healthcare-readmission-risk-pipeline) | Healthcare analytics, batch ML scoring, risk bands | Synthetic patient data, risk scoring script, output scores |
 | [Clinical Notes NLP Code Detection](projects/clinical-notes-nlp-code-detection) | Clinical NLP, review queues, compliance-aware workflow design | Synthetic notes, detection script, candidate-code findings |
+| [Daily LinkedIn Post Workflow](projects/daily-linkedin-post-workflow) | Scheduled content workflow, diagrams, technical writing | GitHub Actions workflow, content calendar, generated post drafts |
 
 ## Senior Data Engineering Themes
 
@@ -48,6 +50,10 @@ The observability project demonstrates how automated checks can detect duplicate
 ### Healthcare And ML Data Engineering
 
 The healthcare projects show experience with regulated-domain thinking, feature engineering, batch scoring, clinical-style text processing, and human-review workflows without using protected health information.
+
+### Technical Content Operations
+
+The scheduled LinkedIn workflow turns professional visibility into a repeatable system. It uses a content calendar, GitHub Actions, templated markdown generation, Mermaid diagrams, and manual review checkpoints to support consistent daily posting.
 
 ## Run The Projects
 
@@ -81,6 +87,11 @@ python3 score_readmission_risk.py
 ```bash
 cd projects/clinical-notes-nlp-code-detection
 python3 detect_candidate_codes.py
+```
+
+```bash
+cd projects/daily-linkedin-post-workflow
+python3 generate_daily_post.py
 ```
 
 ## Public Data Disclaimer
