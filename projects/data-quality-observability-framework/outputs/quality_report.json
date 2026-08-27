@@ -1,0 +1,24 @@
+{
+  "checks": [
+    {
+      "name": "record_id_unique",
+      "status": "failed",
+      "failures": 1
+    },
+    {
+      "name": "account_id_not_null",
+      "status": "failed",
+      "failures": 1
+    },
+    {
+      "name": "event_count_non_negative",
+      "status": "passed",
+      "failures": 0
+    },
+    {
+      "name": "freshness_within_2_days",
+      "status": "passed",
+      "failures": 0
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+contact_id,company_id,role,email_domain
+ct_001_0,co_001,End User,segment1.example.com
+ct_001_1,co_001,Admin,segment1.example.com
+ct_002_0,co_002,Champion,segment2.example.com
+ct_002_1,co_002,End User,segment2.example.com
+ct_003_0,co_003,Economic Buyer,segment3.example.com
+ct_003_1,co_003,Economic Buyer,segment3.example.com
+ct_003_2,co_003,Champion,segment3.example.com
+ct_004_0,co_004,Champion,segment4.example.com
+ct_004_1,co_004,End User,segment4.example.com
+ct_004_2,co_004,Champion,segment4.example.com
+ct_004_3,co_004,End User,segment4.example.com
+ct_005_0,co_005,Champion,segment5.example.com
+ct_006_0,co_006,Champion,segment6.example.com
+ct_006_1,co_006,Admin,segment6.example.com
+ct_006_2,co_006,Economic Buyer,segment6.example.com
+ct_007_0,co_007,Champion,segment7.example.com
+ct_007_1,co_007,Economic Buyer,segment7.example.com
+ct_007_2,co_007,Admin,segment7.example.com
+ct_007_3,co_007,Champion,segment7.example.com
+ct_008_0,co_008,End User,segment8.example.com
+ct_008_1,co_008,Champion,segment8.example.com
+ct_008_2,co_008,Economic Buyer,segment8.example.com
+ct_008_3,co_008,End User,segment8.example.com
+ct_009_0,co_009,Economic Buyer,segment9.example.com
+ct_009_1,co_009,Economic Buyer,segment9.example.com
+ct_009_2,co_009,Economic Buyer,segment9.example.com
+ct_009_3,co_009,Admin,segment9.example.com
+ct_010_0,co_010,End User,segment10.example.com
+ct_010_1,co_010,Economic Buyer,segment10.example.com
+ct_010_2,co_010,Economic Buyer,segment10.example.com
+ct_010_3,co_010,Champion,segment10.example.com
+ct_011_0,co_011,Admin,segment11.example.com
+ct_012_0,co_012,End User,segment12.example.com
+ct_013_0,co_013,Economic Buyer,segment13.example.com
+ct_014_0,co_014,Admin,segment14.example.com
+ct_014_1,co_014,Economic Buyer,segment14.example.com
+ct_015_0,co_015,Admin,segment15.example.com
+ct_015_1,co_015,Economic Buyer,segment15.example.com
+ct_016_0,co_016,Admin,segment16.example.com
+ct_017_0,co_017,Champion,segment17.example.com
+ct_017_1,co_017,Admin,segment17.example.com
+ct_018_0,co_018,End User,segment18.example.com
+ct_018_1,co_018,Admin,segment18.example.com
+ct_018_2,co_018,Champion,segment18.example.com
+ct_018_3,co_018,Champion,segment18.example.com
+ct_019_0,co_019,Admin,segment19.example.com
+ct_019_1,co_019,Admin,segment19.example.com
+ct_020_0,co_020,Economic Buyer,segment20.example.com
+ct_020_1,co_020,End User,segment20.example.com
+ct_021_0,co_021,Admin,segment21.example.com
+ct_021_1,co_021,Champion,segment21.example.com
+ct_021_2,co_021,End User,segment21.example.com
+ct_022_0,co_022,Economic Buyer,segment22.example.com
+ct_023_0,co_023,Economic Buyer,segment23.example.com
+ct_023_1,co_023,End User,segment23.example.com
+ct_024_0,co_024,Economic Buyer,segment24.example.com
+ct_025_0,co_025,End User,segment25.example.com
+ct_026_0,co_026,Champion,segment26.example.com
+ct_026_1,co_026,End User,segment26.example.com
+ct_026_2,co_026,Economic Buyer,segment26.example.com
+ct_026_3,co_026,Champion,segment26.example.com
+ct_027_0,co_027,Economic Buyer,segment27.example.com
+ct_027_1,co_027,Champion,segment27.example.com
+ct_028_0,co_028,End User,segment28.example.com
+ct_029_0,co_029,Economic Buyer,segment29.example.com
+ct_030_0,co_030,Champion,segment30.example.com
+ct_030_1,co_030,Economic Buyer,segment30.example.com
+ct_030_2,co_030,Admin,segment30.example.com
+ct_030_3,co_030,Champion,segment30.example.com

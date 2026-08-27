@@ -1,0 +1,61 @@
+note_id,clinical_note,billed_codes
+note_001,"Patient history includes heart failure, kidney disease. Follow-up recommended.",I50
+note_002,"Patient history includes kidney disease, heart failure, diabetes. Follow-up recommended.",N18|I50
+note_003,"Patient history includes pneumonia, kidney disease, diabetes. Follow-up recommended.",J18|N18|E11
+note_004,"Patient history includes diabetes, hypertension, pneumonia. Follow-up recommended.",E11|I10
+note_005,"Patient history includes kidney disease, hypertension. Follow-up recommended.",N18|I10
+note_006,Patient history includes diabetes. Follow-up recommended.,E11
+note_007,"Patient history includes heart failure, hypertension, pneumonia. Follow-up recommended.",I50|I10
+note_008,"Patient history includes hypertension, diabetes. Follow-up recommended.",I10
+note_009,"Patient history includes diabetes, hypertension, pneumonia. Follow-up recommended.",E11|I10|J18
+note_010,Patient history includes pneumonia. Follow-up recommended.,J18
+note_011,"Patient history includes pneumonia, hypertension. Follow-up recommended.",J18
+note_012,"Patient history includes kidney disease, pneumonia. Follow-up recommended.",N18|J18
+note_013,Patient history includes heart failure. Follow-up recommended.,
+note_014,"Patient history includes kidney disease, heart failure. Follow-up recommended.",N18
+note_015,"Patient history includes pneumonia, heart failure, diabetes. Follow-up recommended.",J18|I50
+note_016,"Patient history includes pneumonia, kidney disease, diabetes. Follow-up recommended.",J18|N18
+note_017,Patient history includes heart failure. Follow-up recommended.,
+note_018,"Patient history includes kidney disease, heart failure. Follow-up recommended.",N18|I50
+note_019,Patient history includes diabetes. Follow-up recommended.,E11
+note_020,"Patient history includes pneumonia, heart failure, kidney disease. Follow-up recommended.",J18|I50|N18
+note_021,Patient history includes heart failure. Follow-up recommended.,I50
+note_022,"Patient history includes kidney disease, diabetes, hypertension. Follow-up recommended.",N18|E11
+note_023,Patient history includes kidney disease. Follow-up recommended.,N18
+note_024,Patient history includes pneumonia. Follow-up recommended.,J18
+note_025,"Patient history includes hypertension, kidney disease. Follow-up recommended.",I10|N18
+note_026,"Patient history includes pneumonia, heart failure, hypertension. Follow-up recommended.",J18|I50|I10
+note_027,"Patient history includes diabetes, hypertension. Follow-up recommended.",E11|I10
+note_028,"Patient history includes diabetes, heart failure. Follow-up recommended.",E11
+note_029,"Patient history includes kidney disease, hypertension. Follow-up recommended.",N18
+note_030,"Patient history includes hypertension, pneumonia. Follow-up recommended.",I10
+note_031,"Patient history includes heart failure, hypertension, diabetes. Follow-up recommended.",I50|I10|E11
+note_032,"Patient history includes hypertension, pneumonia, kidney disease. Follow-up recommended.",I10|J18
+note_033,Patient history includes hypertension. Follow-up recommended.,
+note_034,Patient history includes kidney disease. Follow-up recommended.,
+note_035,"Patient history includes kidney disease, diabetes, hypertension. Follow-up recommended.",N18|E11|I10
+note_036,"Patient history includes pneumonia, kidney disease, diabetes. Follow-up recommended.",J18|N18|E11
+note_037,"Patient history includes hypertension, heart failure, kidney disease. Follow-up recommended.",I10|I50|N18
+note_038,Patient history includes kidney disease. Follow-up recommended.,
+note_039,Patient history includes hypertension. Follow-up recommended.,I10
+note_040,"Patient history includes pneumonia, diabetes, hypertension. Follow-up recommended.",J18|E11|I10
+note_041,"Patient history includes pneumonia, diabetes, kidney disease. Follow-up recommended.",J18|E11|N18
+note_042,Patient history includes pneumonia. Follow-up recommended.,
+note_043,"Patient history includes heart failure, diabetes, hypertension. Follow-up recommended.",I50|E11|I10
+note_044,"Patient history includes hypertension, kidney disease. Follow-up recommended.",I10|N18
+note_045,"Patient history includes diabetes, kidney disease, heart failure. Follow-up recommended.",E11|N18|I50
+note_046,"Patient history includes hypertension, diabetes. Follow-up recommended.",I10
+note_047,"Patient history includes heart failure, kidney disease. Follow-up recommended.",I50
+note_048,Patient history includes heart failure. Follow-up recommended.,I50
+note_049,Patient history includes heart failure. Follow-up recommended.,
+note_050,"Patient history includes pneumonia, hypertension, heart failure. Follow-up recommended.",J18|I10|I50
+note_051,"Patient history includes diabetes, hypertension. Follow-up recommended.",E11|I10
+note_052,"Patient history includes kidney disease, diabetes. Follow-up recommended.",N18
+note_053,Patient history includes hypertension. Follow-up recommended.,
+note_054,"Patient history includes pneumonia, hypertension, diabetes. Follow-up recommended.",J18|I10|E11
+note_055,"Patient history includes heart failure, hypertension, kidney disease. Follow-up recommended.",I50|I10|N18
+note_056,"Patient history includes heart failure, kidney disease, pneumonia. Follow-up recommended.",I50|N18|J18
+note_057,Patient history includes kidney disease. Follow-up recommended.,
+note_058,"Patient history includes hypertension, heart failure. Follow-up recommended.",I10|I50
+note_059,"Patient history includes diabetes, pneumonia, hypertension. Follow-up recommended.",E11|J18|I10
+note_060,"Patient history includes kidney disease, heart failure. Follow-up recommended.",N18|I50

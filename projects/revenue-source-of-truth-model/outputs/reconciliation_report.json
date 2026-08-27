@@ -1,0 +1,9 @@
+{
+  "closed_won_deals": 56,
+  "recognized_revenue_usd": 3616925.85,
+  "controls": [
+    "status filter",
+    "fx standardization",
+    "deal-level deduplication"
+  ]
+}
