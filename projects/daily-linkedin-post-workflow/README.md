@@ -4,7 +4,7 @@
 
 ## What This Demonstrates
 
-This project demonstrates a scheduled content workflow for maintaining a consistent technical presence on LinkedIn. It uses GitHub Actions to run every day, select a topic from a data engineering content calendar, generate a polished post draft, include a Mermaid architecture diagram, and commit the daily draft back into the repository.
+This project demonstrates a scheduled content workflow for maintaining a consistent technical presence on LinkedIn. It uses GitHub Actions to run every day, select a topic from a data engineering content calendar, generate a polished post draft, render a 1200 x 1200 LinkedIn-ready architecture graphic, and commit both assets back into the repository.
 
 ## Business Problem
 
@@ -27,8 +27,9 @@ flowchart LR
 - Runs daily from GitHub Actions using a cron schedule.
 - Uses a curated content calendar focused on data engineering, governance, analytics, revenue data, and healthcare ML.
 - Generates a LinkedIn-ready post with a hook, short technical explanation, architecture diagram, and practical takeaway.
-- Writes date-stamped drafts under `generated/`.
+- Writes date-stamped drafts and PNG graphics under `generated/`.
 - Updates `generated/latest-linkedin-post.md` so the newest draft is easy to find.
+- Updates `generated/latest-linkedin-graphic.png` so the newest image is easy to download.
 - Keeps publishing manual to avoid accidental posting and to comply with LinkedIn authorization requirements.
 
 ## Production Equivalent Patterns

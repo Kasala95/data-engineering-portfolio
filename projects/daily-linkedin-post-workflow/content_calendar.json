@@ -4,15 +4,19 @@
     "hook": "A Customer 360 model is not valuable because it has every field. It is valuable because teams trust the definitions.",
     "body": "When I design customer analytics layers, I think in terms of reusable entities: company, contact, deal, ticket, product usage, and lifecycle status. The hard part is rarely the join itself. The hard part is agreeing on ownership, refresh cadence, field definitions, and validation rules so analysts are not rebuilding the same logic in every dashboard.",
     "takeaway": "A good Customer 360 model should reduce repeated questions, not create a larger table with more confusion.",
+    "discussion_prompt": "What is the hardest customer definition your team has had to standardize?",
     "diagram_title": "Customer 360 Flow",
+    "visual_steps": ["CRM Objects", "Standardized Models", "Customer Mart", "Self-Service Analytics"],
     "diagram": "flowchart LR\\n  A[CRM Objects] --> B[Standardized Models]\\n  B --> C[Customer Mart]\\n  C --> D[Self-Service Analytics]"
   },
   {
     "theme": "Revenue Data Trust",
-    "hook": "Revenue reporting needs controls before it needs another dashboard.",
-    "body": "The difference between two revenue numbers is often hidden in business logic: close-date rules, deal deduplication, currency conversion timing, account hierarchy, or attribution. A source-of-truth model should make those rules explicit and testable before the number reaches leadership.",
+    "hook": "Two revenue dashboards can both be technically correct and still disagree.",
+    "body": "The conflict is rarely caused by SQL alone. It is usually hidden in business logic: which close date counts, how multi-contact deals are deduplicated, when currency conversion is applied, how account hierarchies roll up, and which attribution rule wins. When I design a revenue source-of-truth model, I treat those definitions as governed data contracts. The rules are documented, tested, reconciled, and owned before the metric reaches leadership.",
     "takeaway": "Trusted revenue data is engineered through definitions, reconciliation, and ownership.",
+    "discussion_prompt": "Which revenue definition has caused the most debate in your organization?",
     "diagram_title": "Revenue Control Flow",
+    "visual_steps": ["Deals", "Business Rules", "FX Standardization", "Reconciliation Checks", "Executive Metrics"],
     "diagram": "flowchart LR\\n  A[Deals] --> B[Business Rules]\\n  B --> C[FX Standardization]\\n  C --> D[Reconciliation Checks]\\n  D --> E[Executive Metrics]"
   },
   {
@@ -20,7 +24,9 @@
     "hook": "Data quality checks are more useful when they explain what failed and who should care.",
     "body": "A failed pipeline tells you something broke. A useful observability layer tells you whether the issue is freshness, duplicate records, missing business keys, invalid ranges, or metric drift. That context shortens incident response and helps business teams understand impact.",
     "takeaway": "Good data quality work turns vague distrust into specific, fixable signals.",
+    "discussion_prompt": "Which data quality signal has been most useful in shortening your incident response?",
     "diagram_title": "Quality Gate",
+    "visual_steps": ["Source Data", "Validation Checks", "Pass / Fail Gate", "Publish or Triage"],
     "diagram": "flowchart LR\\n  A[Source Data] --> B[Validation Checks]\\n  B --> C{Pass?}\\n  C -->|Yes| D[Publish]\\n  C -->|No| E[Alert and Triage]"
   },
   {
@@ -28,7 +34,9 @@
     "hook": "A useful account health score should be explainable enough for customer teams to act on it.",
     "body": "Account scoring works best when the ingredients are understandable: usage, support burden, customer satisfaction, renewal timing, and account value. If a team cannot explain why a score changed, the score becomes another dashboard number instead of an operational signal.",
     "takeaway": "The best scoring systems support action, not just prediction.",
+    "discussion_prompt": "What makes an account health score genuinely actionable for your customer teams?",
     "diagram_title": "Health Scoring",
+    "visual_steps": ["Usage + Support + CSAT", "Health Score", "CRM Workflow"],
     "diagram": "flowchart LR\\n  A[Usage] --> E[Health Score]\\n  B[Support] --> E\\n  C[CSAT] --> E\\n  D[Renewal Timing] --> E\\n  E --> F[CRM Workflow]"
   },
   {
@@ -36,7 +44,9 @@
     "hook": "In healthcare analytics, the model is only one part of the system.",
     "body": "A readmission risk workflow needs secure data handling, feature engineering, batch scoring, monitoring, clinical review, and responsible workflow integration. The engineering around the model often determines whether the output is trusted enough to use.",
     "takeaway": "Healthcare ML succeeds when data engineering, privacy, monitoring, and human review are designed together.",
+    "discussion_prompt": "Which part of the healthcare ML workflow deserves more attention than it usually receives?",
     "diagram_title": "Healthcare Scoring Workflow",
+    "visual_steps": ["Clinical Signals", "Feature Pipeline", "Risk Score", "Monitoring", "Clinical Review"],
     "diagram": "flowchart LR\\n  A[Clinical Signals] --> B[Feature Pipeline]\\n  B --> C[Risk Score]\\n  C --> D[Monitoring]\\n  D --> E[Clinical Review]"
   },
   {
@@ -44,7 +54,9 @@
     "hook": "Governance should make approved access easier and risky access harder.",
     "body": "Good governance is not only about restricting data. It is about role clarity, automated access updates, column-level controls, auditability, and documentation that helps analysts know what they can use safely.",
     "takeaway": "The best governance systems reduce friction and risk at the same time.",
+    "discussion_prompt": "Where has good governance made approved data access faster for your team?",
     "diagram_title": "Governed Access",
+    "visual_steps": ["Identity Provider", "Warehouse Roles", "Column Policies + Audit Logs", "Approved Analytics"],
     "diagram": "flowchart LR\\n  A[Identity Provider] --> B[Warehouse Roles]\\n  B --> C[Column Policies]\\n  C --> D[Approved Analytics]\\n  B --> E[Audit Logs]"
   },
   {
@@ -52,7 +64,9 @@
     "hook": "A semantic layer is a trust contract between data engineering and the business.",
     "body": "When metrics live in scattered SQL, every dashboard becomes its own interpretation. A strong analytics engineering layer centralizes definitions, tests the assumptions, documents ownership, and gives teams reusable building blocks.",
     "takeaway": "Reusable metric definitions are how data teams scale trust.",
+    "discussion_prompt": "Which metric would benefit most from moving out of dashboard SQL and into a governed semantic layer?",
     "diagram_title": "Metric Layer",
+    "visual_steps": ["Raw Tables", "Staging Models", "Business Entities", "Metric Layer", "Decisions"],
     "diagram": "flowchart LR\\n  A[Raw Tables] --> B[Staging Models]\\n  B --> C[Business Entities]\\n  C --> D[Metric Layer]\\n  D --> E[Dashboards and Decisions]"
   }
 ]
