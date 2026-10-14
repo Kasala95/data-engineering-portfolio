@@ -1,33 +1,34 @@
-# LinkedIn Post Draft - 2026-10-13
+# LinkedIn Post Draft - 2026-10-14
 
-Theme: Data Quality
+Theme: Account Health
 
 ## Post Copy
 
-Data quality checks are more useful when they explain what failed and who should care.
+A useful account health score should be explainable enough for customer teams to act on it.
 
-A failed pipeline tells you something broke. A useful observability layer tells you whether the issue is freshness, duplicate records, missing business keys, invalid ranges, or metric drift. That context shortens incident response and helps business teams understand impact.
+Account scoring works best when the ingredients are understandable: usage, support burden, customer satisfaction, renewal timing, and account value. If a team cannot explain why a score changed, the score becomes another dashboard number instead of an operational signal.
 
-Good data quality work turns vague distrust into specific, fixable signals.
+The best scoring systems support action, not just prediction.
 
 I documented the architecture and implementation patterns in my public data engineering portfolio: https://kasala95.github.io/data-engineering-portfolio/
 
-Which data quality signal has been most useful in shortening your incident response?
+What makes an account health score genuinely actionable for your customer teams?
 
 Suggested hashtags: #DataEngineering #AnalyticsEngineering #DataGovernance #CloudData #DataArchitecture
 
 ## Diagram Documentation
 
-Quality Gate
+Health Scoring
 
-LinkedIn-ready graphic: `generated/2026-10-13-linkedin-graphic.png`
+LinkedIn-ready graphic: `generated/2026-10-14-linkedin-graphic.png`
 
 ```mermaid
 flowchart LR
-  A[Source Data] --> B[Validation Checks]
-  B --> C{Pass?}
-  C -->|Yes| D[Publish]
-  C -->|No| E[Alert and Triage]
+  A[Usage] --> E[Health Score]
+  B[Support] --> E
+  C[CSAT] --> E
+  D[Renewal Timing] --> E
+  E --> F[CRM Workflow]
 ```
 
 ## Publishing Checklist
