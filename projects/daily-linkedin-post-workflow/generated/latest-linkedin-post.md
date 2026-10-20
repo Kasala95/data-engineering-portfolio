@@ -1,33 +1,33 @@
-# LinkedIn Post Draft - 2026-10-19
+# LinkedIn Post Draft - 2026-10-20
 
-Theme: Revenue Data Trust
+Theme: Data Quality
 
 ## Post Copy
 
-Two revenue dashboards can both be technically correct and still disagree.
+Data quality checks are more useful when they explain what failed and who should care.
 
-The conflict is rarely caused by SQL alone. It is usually hidden in business logic: which close date counts, how multi-contact deals are deduplicated, when currency conversion is applied, how account hierarchies roll up, and which attribution rule wins. When I design a revenue source-of-truth model, I treat those definitions as governed data contracts. The rules are documented, tested, reconciled, and owned before the metric reaches leadership.
+A failed pipeline tells you something broke. A useful observability layer tells you whether the issue is freshness, duplicate records, missing business keys, invalid ranges, or metric drift. That context shortens incident response and helps business teams understand impact.
 
-Trusted revenue data is engineered through definitions, reconciliation, and ownership.
+Good data quality work turns vague distrust into specific, fixable signals.
 
 I documented the architecture and implementation patterns in my public data engineering portfolio: https://kasala95.github.io/data-engineering-portfolio/
 
-Which revenue definition has caused the most debate in your organization?
+Which data quality signal has been most useful in shortening your incident response?
 
 Suggested hashtags: #DataEngineering #AnalyticsEngineering #DataGovernance #CloudData #DataArchitecture
 
 ## Diagram Documentation
 
-Revenue Control Flow
+Quality Gate
 
-LinkedIn-ready graphic: `generated/2026-10-19-linkedin-graphic.png`
+LinkedIn-ready graphic: `generated/2026-10-20-linkedin-graphic.png`
 
 ```mermaid
 flowchart LR
-  A[Deals] --> B[Business Rules]
-  B --> C[FX Standardization]
-  C --> D[Reconciliation Checks]
-  D --> E[Executive Metrics]
+  A[Source Data] --> B[Validation Checks]
+  B --> C{Pass?}
+  C -->|Yes| D[Publish]
+  C -->|No| E[Alert and Triage]
 ```
 
 ## Publishing Checklist
