@@ -1,34 +1,33 @@
-# LinkedIn Post Draft - 2026-10-21
+# LinkedIn Post Draft - 2026-10-22
 
-Theme: Account Health
+Theme: Healthcare ML
 
 ## Post Copy
 
-A useful account health score should be explainable enough for customer teams to act on it.
+In healthcare analytics, the model is only one part of the system.
 
-Account scoring works best when the ingredients are understandable: usage, support burden, customer satisfaction, renewal timing, and account value. If a team cannot explain why a score changed, the score becomes another dashboard number instead of an operational signal.
+A readmission risk workflow needs secure data handling, feature engineering, batch scoring, monitoring, clinical review, and responsible workflow integration. The engineering around the model often determines whether the output is trusted enough to use.
 
-The best scoring systems support action, not just prediction.
+Healthcare ML succeeds when data engineering, privacy, monitoring, and human review are designed together.
 
 I documented the architecture and implementation patterns in my public data engineering portfolio: https://kasala95.github.io/data-engineering-portfolio/
 
-What makes an account health score genuinely actionable for your customer teams?
+Which part of the healthcare ML workflow deserves more attention than it usually receives?
 
 Suggested hashtags: #DataEngineering #AnalyticsEngineering #DataGovernance #CloudData #DataArchitecture
 
 ## Diagram Documentation
 
-Health Scoring
+Healthcare Scoring Workflow
 
-LinkedIn-ready graphic: `generated/2026-10-21-linkedin-graphic.png`
+LinkedIn-ready graphic: `generated/2026-10-22-linkedin-graphic.png`
 
 ```mermaid
 flowchart LR
-  A[Usage] --> E[Health Score]
-  B[Support] --> E
-  C[CSAT] --> E
-  D[Renewal Timing] --> E
-  E --> F[CRM Workflow]
+  A[Clinical Signals] --> B[Feature Pipeline]
+  B --> C[Risk Score]
+  C --> D[Monitoring]
+  D --> E[Clinical Review]
 ```
 
 ## Publishing Checklist
