@@ -1,32 +1,33 @@
-# LinkedIn Post Draft - 2026-10-25
+# LinkedIn Post Draft - 2026-10-26
 
-Theme: Customer 360
+Theme: Revenue Data Trust
 
 ## Post Copy
 
-A Customer 360 model is not valuable because it has every field. It is valuable because teams trust the definitions.
+Two revenue dashboards can both be technically correct and still disagree.
 
-When I design customer analytics layers, I think in terms of reusable entities: company, contact, deal, ticket, product usage, and lifecycle status. The hard part is rarely the join itself. The hard part is agreeing on ownership, refresh cadence, field definitions, and validation rules so analysts are not rebuilding the same logic in every dashboard.
+The conflict is rarely caused by SQL alone. It is usually hidden in business logic: which close date counts, how multi-contact deals are deduplicated, when currency conversion is applied, how account hierarchies roll up, and which attribution rule wins. When I design a revenue source-of-truth model, I treat those definitions as governed data contracts. The rules are documented, tested, reconciled, and owned before the metric reaches leadership.
 
-A good Customer 360 model should reduce repeated questions, not create a larger table with more confusion.
+Trusted revenue data is engineered through definitions, reconciliation, and ownership.
 
 I documented the architecture and implementation patterns in my public data engineering portfolio: https://kasala95.github.io/data-engineering-portfolio/
 
-What is the hardest customer definition your team has had to standardize?
+Which revenue definition has caused the most debate in your organization?
 
 Suggested hashtags: #DataEngineering #AnalyticsEngineering #DataGovernance #CloudData #DataArchitecture
 
 ## Diagram Documentation
 
-Customer 360 Flow
+Revenue Control Flow
 
-LinkedIn-ready graphic: `generated/2026-10-25-linkedin-graphic.png`
+LinkedIn-ready graphic: `generated/2026-10-26-linkedin-graphic.png`
 
 ```mermaid
 flowchart LR
-  A[CRM Objects] --> B[Standardized Models]
-  B --> C[Customer Mart]
-  C --> D[Self-Service Analytics]
+  A[Deals] --> B[Business Rules]
+  B --> C[FX Standardization]
+  C --> D[Reconciliation Checks]
+  D --> E[Executive Metrics]
 ```
 
 ## Publishing Checklist
