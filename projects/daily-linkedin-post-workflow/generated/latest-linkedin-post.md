@@ -1,33 +1,33 @@
-# LinkedIn Post Draft - 2026-10-29
+# LinkedIn Post Draft - 2026-10-30
 
-Theme: Healthcare ML
+Theme: Data Governance
 
 ## Post Copy
 
-In healthcare analytics, the model is only one part of the system.
+Governance should make approved access easier and risky access harder.
 
-A readmission risk workflow needs secure data handling, feature engineering, batch scoring, monitoring, clinical review, and responsible workflow integration. The engineering around the model often determines whether the output is trusted enough to use.
+Good governance is not only about restricting data. It is about role clarity, automated access updates, column-level controls, auditability, and documentation that helps analysts know what they can use safely.
 
-Healthcare ML succeeds when data engineering, privacy, monitoring, and human review are designed together.
+The best governance systems reduce friction and risk at the same time.
 
 I documented the architecture and implementation patterns in my public data engineering portfolio: https://kasala95.github.io/data-engineering-portfolio/
 
-Which part of the healthcare ML workflow deserves more attention than it usually receives?
+Where has good governance made approved data access faster for your team?
 
 Suggested hashtags: #DataEngineering #AnalyticsEngineering #DataGovernance #CloudData #DataArchitecture
 
 ## Diagram Documentation
 
-Healthcare Scoring Workflow
+Governed Access
 
-LinkedIn-ready graphic: `generated/2026-10-29-linkedin-graphic.png`
+LinkedIn-ready graphic: `generated/2026-10-30-linkedin-graphic.png`
 
 ```mermaid
 flowchart LR
-  A[Clinical Signals] --> B[Feature Pipeline]
-  B --> C[Risk Score]
-  C --> D[Monitoring]
-  D --> E[Clinical Review]
+  A[Identity Provider] --> B[Warehouse Roles]
+  B --> C[Column Policies]
+  C --> D[Approved Analytics]
+  B --> E[Audit Logs]
 ```
 
 ## Publishing Checklist
