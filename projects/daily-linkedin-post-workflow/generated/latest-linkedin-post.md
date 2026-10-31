@@ -1,33 +1,33 @@
-# LinkedIn Post Draft - 2026-10-30
+# LinkedIn Post Draft - 2026-10-31
 
-Theme: Data Governance
+Theme: Analytics Engineering
 
 ## Post Copy
 
-Governance should make approved access easier and risky access harder.
+A semantic layer is a trust contract between data engineering and the business.
 
-Good governance is not only about restricting data. It is about role clarity, automated access updates, column-level controls, auditability, and documentation that helps analysts know what they can use safely.
+When metrics live in scattered SQL, every dashboard becomes its own interpretation. A strong analytics engineering layer centralizes definitions, tests the assumptions, documents ownership, and gives teams reusable building blocks.
 
-The best governance systems reduce friction and risk at the same time.
+Reusable metric definitions are how data teams scale trust.
 
 I documented the architecture and implementation patterns in my public data engineering portfolio: https://kasala95.github.io/data-engineering-portfolio/
 
-Where has good governance made approved data access faster for your team?
+Which metric would benefit most from moving out of dashboard SQL and into a governed semantic layer?
 
 Suggested hashtags: #DataEngineering #AnalyticsEngineering #DataGovernance #CloudData #DataArchitecture
 
 ## Diagram Documentation
 
-Governed Access
+Metric Layer
 
-LinkedIn-ready graphic: `generated/2026-10-30-linkedin-graphic.png`
+LinkedIn-ready graphic: `generated/2026-10-31-linkedin-graphic.png`
 
 ```mermaid
 flowchart LR
-  A[Identity Provider] --> B[Warehouse Roles]
-  B --> C[Column Policies]
-  C --> D[Approved Analytics]
-  B --> E[Audit Logs]
+  A[Raw Tables] --> B[Staging Models]
+  B --> C[Business Entities]
+  C --> D[Metric Layer]
+  D --> E[Dashboards and Decisions]
 ```
 
 ## Publishing Checklist
