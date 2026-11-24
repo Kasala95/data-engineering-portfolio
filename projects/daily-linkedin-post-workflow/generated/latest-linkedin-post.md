@@ -1,32 +1,33 @@
-# LinkedIn Post Draft - 2026-11-22
+# LinkedIn Post Draft - 2026-11-24
 
-Theme: Customer 360
+Theme: Data Quality
 
 ## Post Copy
 
-A Customer 360 model is not valuable because it has every field. It is valuable because teams trust the definitions.
+Data quality checks are more useful when they explain what failed and who should care.
 
-When I design customer analytics layers, I think in terms of reusable entities: company, contact, deal, ticket, product usage, and lifecycle status. The hard part is rarely the join itself. The hard part is agreeing on ownership, refresh cadence, field definitions, and validation rules so analysts are not rebuilding the same logic in every dashboard.
+A failed pipeline tells you something broke. A useful observability layer tells you whether the issue is freshness, duplicate records, missing business keys, invalid ranges, or metric drift. That context shortens incident response and helps business teams understand impact.
 
-A good Customer 360 model should reduce repeated questions, not create a larger table with more confusion.
+Good data quality work turns vague distrust into specific, fixable signals.
 
 I documented the architecture and implementation patterns in my public data engineering portfolio: https://kasala95.github.io/data-engineering-portfolio/
 
-What is the hardest customer definition your team has had to standardize?
+Which data quality signal has been most useful in shortening your incident response?
 
 Suggested hashtags: #DataEngineering #AnalyticsEngineering #DataGovernance #CloudData #DataArchitecture
 
 ## Diagram Documentation
 
-Customer 360 Flow
+Quality Gate
 
-LinkedIn-ready graphic: `generated/2026-11-22-linkedin-graphic.png`
+LinkedIn-ready graphic: `generated/2026-11-24-linkedin-graphic.png`
 
 ```mermaid
 flowchart LR
-  A[CRM Objects] --> B[Standardized Models]
-  B --> C[Customer Mart]
-  C --> D[Self-Service Analytics]
+  A[Source Data] --> B[Validation Checks]
+  B --> C{Pass?}
+  C -->|Yes| D[Publish]
+  C -->|No| E[Alert and Triage]
 ```
 
 ## Publishing Checklist
